@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site De Piadas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Seu Gerador de Piadas</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="obterTodasBtn" class="nav-btn">Gerar Piada</a></li>
+                <li><a href="#" id="criarFormularioBtn" class="nav-btn">Criar Piada</a></li>
+                <li><a href="#" id="visualizarCriadasBtn" class="nav-btn">Suas Piadas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div id="containerPiadas" class="container-cartao"></div>
+    <div id="overlay"></div>
+
+    
+    <div id="formularioCriacao" class="formulario"> <span id="fecharCriacao" onclick="exibirFormularioCriacao(false)">X</span>
+        <h2>Crie Sua Piada</h2>
+        <form id="formCriacao">
+            <label for="descricaoPiada">Descrição:</label>
+            <input type="text" id="descricaoPiada" name="descricaoPiada" required>
+    
+            <label for="respostaPiada">Resposta:</label>
+            <input type="text" id="respostaPiada" name="respostaPiada" required>
+    
+            <button type="submit" class="action-btn">Adicionar Piada</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p id="desenvolvedores">Desenvolvedores</p>
+    <hr>
+    <p><a href="https://www.instagram.com/jeh_martins.m/" target="_blank">Jean Lucas Machado</a></p>
+    <p><a href="https://www.instagram.com/heroians/" target="_blank">Ian Santiago</a></p>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
